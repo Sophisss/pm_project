@@ -1,0 +1,21 @@
+from import_xes import import_xes
+from pm4py.algo.discovery.heuristics import algorithm as heuristics_miner
+from pm4py.visualization.heuristics_net import visualizer as hn_visualizer
+from pm4py.visualization.petri_net import visualizer as pn_visualizer
+import pm4py.objects.conversion.heuristics_net.variants.to_petri_net as hn_to_petri_converter
+
+def run_heuristic_miner(log):
+    # Heuristic Net
+    heu_net = heuristics_miner.apply_heu(log)
+
+    gviz = hn_visualizer.apply(heu_net)
+    hn_visualizer.view(gviz)
+
+    # Petri Net
+    net, initial_marking, final_marking = hn_to_petri_converter.apply(heu_net)
+    gviz = pn_visualizer.apply(net, initial_marking, final_marking)
+    pn_visualizer.view(gviz)
+
+if __name__ == "__main__":
+    event_log = import_xes()
+    run_heuristic_miner(event_log)
