@@ -9,5 +9,5 @@ This project demonstrates the application of basic Process Mining techniques and
 The repository has the following folder structure:
 
 - _scripts_ : contains the Python scripts defined to run the Process Discovery and Conformance Checking algorithms.
-- _images_ : contains the model from which the logs have been generated and the output models obtained from the Process Discovery algorithms.
+- _models_ : contains the model from which the logs have been generated and the output models obtained from the Process Discovery algorithms.
 - _documentation_ : contains the project's documentation
