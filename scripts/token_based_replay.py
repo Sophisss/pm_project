@@ -1,10 +1,13 @@
 from pm4py.algo.conformance.tokenreplay import algorithm as token_replay
 from pm4py.algo.evaluation.replay_fitness.variants import token_replay as fitness_evaluator
 from pm4py.algo.evaluation.precision import algorithm as precision_evaluator
+from pprint import pprint
+
 
 def perform_token_based_replay(log, net, initial_marking, final_marking):
     # Perform token-based replay
     tbr_result = token_replay.apply(log, net, initial_marking, final_marking)
+    pprint(tbr_result[0])
     # Calculate the fitness
     token_replay_fitness = _evaluate_fitness(tbr_result)
     print("Token-Based Replay Fitness:", token_replay_fitness)
