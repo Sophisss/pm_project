@@ -13,7 +13,7 @@ The repository has the following folder structure:
 
 - _scripts_ : contains the Python scripts defined to run the Process Discovery and Conformance Checking algorithms.
 - _models_ : contains the model from which the logs have been generated and the output models obtained from the Process Discovery algorithms.
-- _documentation_ : contains the project's documentation
+- _documentation_ : contains the project's documentation.
 - _dataset_ : `road_traffic_log.xes.zip` unzip the file before running the analysis scripts.
 
 ## Requirements
@@ -30,7 +30,7 @@ You can install the required packages using:
 The resulting process models and evaluation metrics are stored in the `models/` folder. Specifically, you can find:
 
 - **Petri nets** discovered by each algorithm;
-- **Fitness** and **precision** scores, which are both printed to the console and saved to files for detailed analysis.
+- **Fitness** and **precision** scores.
 
 ## References
 - **PM4Py Documentation**  
