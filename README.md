@@ -12,7 +12,7 @@ The analysis is based on a real-world dataset:
 The repository has the following folder structure:
 
 - _scripts_ : contains the Python scripts defined to run the Process Discovery and Conformance Checking algorithms.
-- _models_ : contains the model from which the logs have been generated and the output models obtained from the Process Discovery algorithms.
+- _results_ : contains the output models obtained from the Process Discovery algorithms and the fitness and precision scores for each algorithm.
 - _documentation_ : contains the project's documentation.
 - _dataset_ : `road_traffic_log.xes.zip` unzip the file before running the analysis scripts.
 
@@ -27,7 +27,7 @@ You can install the required packages using:
 ```
 
 ## Output
-The resulting process models and evaluation metrics are stored in the `models/` folder. Specifically, you can find:
+The resulting process models and evaluation metrics are stored in the `results/` folder. Specifically, you can find:
 
 - **Petri nets** discovered by each algorithm;
 - **Fitness** and **precision** scores.
